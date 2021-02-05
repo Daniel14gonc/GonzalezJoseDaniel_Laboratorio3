@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         //Se inicia el score.
-        ScoreManager.setScore(score);
+        //ScoreManager.setScore(score);
 
         
         rb = GetComponent<Rigidbody>();

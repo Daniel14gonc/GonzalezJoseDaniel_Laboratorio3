@@ -83,7 +83,8 @@ public class Manager : MonoBehaviour
 
     public void restart()
     {
-        //Metodo que permite reiniciar la escena.
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
+        ScoreManager.setScore(0);
     }
 }
