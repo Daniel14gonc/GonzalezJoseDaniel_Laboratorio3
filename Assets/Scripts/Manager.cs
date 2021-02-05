@@ -38,6 +38,7 @@ public class Manager : MonoBehaviour
         currentPlayer = Instantiate(player, spawn.transform.position, Quaternion.identity);
         camMov.lookTarget = currentPlayer.transform;
         camMov.camTarget = currentPlayer.transform;
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame

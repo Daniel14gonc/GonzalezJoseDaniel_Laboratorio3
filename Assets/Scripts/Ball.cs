@@ -41,7 +41,7 @@ public class Ball : MonoBehaviour
         {
             //En caso se desee salta, se aplica una fuerza que crea un impulso en la pelota.
             if(Input.GetKeyDown(KeyCode.Space) && (Mathf.Abs(rb.velocity.y) <= 0.05f))
-                rb.AddForce(0, force * Time.deltaTime *20, 0, ForceMode.Impulse); 
+                rb.AddForce(0, force * Time.deltaTime *150, 0, ForceMode.Impulse); 
         }
     }
 
