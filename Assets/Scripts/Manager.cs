@@ -79,12 +79,13 @@ public class Manager : MonoBehaviour
     {
         //Metodo que permite regresar al menu principal.
         SceneManager.LoadScene(0);
+        ScoreManager.setScore(0);
     }
 
     public void restart()
     {
+        ScoreManager.setScore(0);
         Scene scene = SceneManager.GetActiveScene(); 
         SceneManager.LoadScene(scene.name);
-        ScoreManager.setScore(0);
     }
 }
